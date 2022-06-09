@@ -3,19 +3,22 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="flex md:mt-8">
+        {Array(10)
+          .fill("")
+          .map((o, i) => (
+            <div
+              style={{
+                width: 100,
+                height: 100,
+                backgroundColor: "black",
+                margin: 10,
+              }}
+            ></div>
+          ))}
+      </div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }
